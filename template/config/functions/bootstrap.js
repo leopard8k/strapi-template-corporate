@@ -1,9 +1,7 @@
 const fs = require("fs");
 const {
   pages,
-  global,
-  globalFR,
-  pagesFR,
+  globals,
   leadFormSubmissions,
 } = require("../../data/data.js");
 
@@ -179,10 +177,9 @@ async function importGlobal() {
     favicon: getFileData("favicon.png"),
     "metadata.shareImage": getFileData("undraw-content-team.png"),
     "navbar.logo.image": getFileData("logo.png"),
-    "footer.logo": getFileData("logo.png"),
+    "footer.logo.image": getFileData("logo.png"),
   };
 
-  const globals = [global, globalFR]
   // Create entry
   globals.forEach(async (locale) => {
     await createEntry("global", locale, files);
@@ -209,10 +206,10 @@ async function importSeedData() {
     code: "fr",
   });
 
-  const allPages = [...pages, ...pagesFR]
+  
   // Create all entries
   await importGlobal();
-  await importPages(allPages);
+  await importPages(pages);
   await importLeadFormSubmissionData();
 }
 

@@ -39,6 +39,10 @@
       }
     },
     "footer": {
+      "logo" : {
+        "image": null,
+        "url": null
+      },
       "smallText": "© Copyright My Company™",
       "columns": [
         {
@@ -101,8 +105,7 @@
             }
           ]
         }
-      ],
-      "logo": null
+      ]
     },
     "favicon": null,
     "localizations": [
