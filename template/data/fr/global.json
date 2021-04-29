@@ -102,10 +102,7 @@
           ]
         }
       ],
-      "logo" : {
-        "image": null,
-        "url": "frenchFR"
-      }
+      "logo": null
     },
     "favicon": null,
     "localizations": [

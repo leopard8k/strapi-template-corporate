@@ -177,7 +177,7 @@ async function importGlobal() {
     favicon: getFileData("favicon.png"),
     "metadata.shareImage": getFileData("undraw-content-team.png"),
     "navbar.logo.image": getFileData("logo.png"),
-    "footer.logo.image": getFileData("logo.png"),
+    "footer.logo": getFileData("logo.png"),
   };
 
   // Create entry
